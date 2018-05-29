@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2402EA4C20B23A24004291B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA4B20B23A24004291B4 /* AppDelegate.swift */; };
+		2402EA4E20B23A24004291B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA4D20B23A24004291B4 /* MainViewController.swift */; };
+		2402EA5120B23A24004291B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2402EA4F20B23A24004291B4 /* Main.storyboard */; };
+		2402EA5420B23A24004291B4 /* Simple_Ingredient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA5220B23A24004291B4 /* Simple_Ingredient.xcdatamodeld */; };
+		2402EA5920B23A26004291B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2402EA5720B23A26004291B4 /* LaunchScreen.storyboard */; };
+		2402EA6420B23A26004291B4 /* Simple_IngredientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA6320B23A26004291B4 /* Simple_IngredientTests.swift */; };
+		2402EA6F20B23A26004291B4 /* Simple_IngredientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA6E20B23A26004291B4 /* Simple_IngredientUITests.swift */; };
+		2402EA8120B34035004291B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2402EA8020B34035004291B4 /* Assets.xcassets */; };
+		2402EA8320B3C37E004291B4 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8220B3C37E004291B4 /* ExploreViewController.swift */; };
+		2402EA8520B3C38D004291B4 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8420B3C38D004291B4 /* FavoriteViewController.swift */; };
+		2402EA8720B3C3A5004291B4 /* DailyChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8620B3C3A5004291B4 /* DailyChallengeViewController.swift */; };
+		2402EA8920B3C416004291B4 /* RecipeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8820B3C416004291B4 /* RecipeSearchViewController.swift */; };
+		2402EA8B20B3C48A004291B4 /* FoodSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8A20B3C48A004291B4 /* FoodSearch.swift */; };
+		2402EA8D20B9C53F004291B4 /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8C20B9C53F004291B4 /* ExploreCollectionViewCell.swift */; };
+		2402EA8F20B9C97B004291B4 /* ExplorePageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8E20B9C97B004291B4 /* ExplorePageOne.swift */; };
+		2402EA9120B9C997004291B4 /* ExplorePageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA9020B9C997004291B4 /* ExplorePageTwoViewController.swift */; };
+		2402EA9520B9CC25004291B4 /* ExplorePageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA9420B9CC25004291B4 /* ExplorePageOneViewController.swift */; };
+		4BF96153EBC4A12BF1253239 /* Pods_Simple_Ingredient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F780ECE1E0713E48C66F293 /* Pods_Simple_Ingredient.framework */; };
+		551D49716CE4D3535356B3C6 /* Pods_Simple_IngredientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1935A32F5C0FDDB22755C9 /* Pods_Simple_IngredientTests.framework */; };
+		FE7A9D005750DA8A0F36ED3A /* Pods_Simple_IngredientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CAAD4DF9C1998CDC616EB1 /* Pods_Simple_IngredientUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2402EA6020B23A26004291B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2402EA4020B23A24004291B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2402EA4720B23A24004291B4;
+			remoteInfo = "Simple Ingredient";
+		};
+		2402EA6B20B23A26004291B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2402EA4020B23A24004291B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2402EA4720B23A24004291B4;
+			remoteInfo = "Simple Ingredient";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B0FA2E5CB18DA37858CE69 /* Pods-Simple IngredientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple IngredientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple IngredientUITests/Pods-Simple IngredientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		06E1D5F61C789071578E3146 /* Pods-Simple IngredientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple IngredientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple IngredientUITests/Pods-Simple IngredientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		121F340B241F1B0B074588C3 /* Pods-Simple Ingredient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Ingredient.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Ingredient/Pods-Simple Ingredient.release.xcconfig"; sourceTree = "<group>"; };
+		2402EA4820B23A24004291B4 /* Simple Ingredient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple Ingredient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2402EA4B20B23A24004291B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2402EA4D20B23A24004291B4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2402EA5020B23A24004291B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2402EA5320B23A24004291B4 /* Simple_Ingredient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simple_Ingredient.xcdatamodel; sourceTree = "<group>"; };
+		2402EA5820B23A26004291B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2402EA5A20B23A26004291B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2402EA5F20B23A26004291B4 /* Simple IngredientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple IngredientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2402EA6320B23A26004291B4 /* Simple_IngredientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_IngredientTests.swift; sourceTree = "<group>"; };
+		2402EA6520B23A26004291B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2402EA6A20B23A26004291B4 /* Simple IngredientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple IngredientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2402EA6E20B23A26004291B4 /* Simple_IngredientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simple_IngredientUITests.swift; sourceTree = "<group>"; };
+		2402EA7020B23A26004291B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2402EA8020B34035004291B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2402EA8220B3C37E004291B4 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		2402EA8420B3C38D004291B4 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		2402EA8620B3C3A5004291B4 /* DailyChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeViewController.swift; sourceTree = "<group>"; };
+		2402EA8820B3C416004291B4 /* RecipeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewController.swift; sourceTree = "<group>"; };
+		2402EA8A20B3C48A004291B4 /* FoodSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearch.swift; sourceTree = "<group>"; };
+		2402EA8C20B9C53F004291B4 /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
+		2402EA8E20B9C97B004291B4 /* ExplorePageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageOne.swift; sourceTree = "<group>"; };
+		2402EA9020B9C997004291B4 /* ExplorePageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageTwoViewController.swift; sourceTree = "<group>"; };
+		2402EA9420B9CC25004291B4 /* ExplorePageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageOneViewController.swift; sourceTree = "<group>"; };
+		4A320628F06BBF415500E34A /* Pods-Simple IngredientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple IngredientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple IngredientTests/Pods-Simple IngredientTests.release.xcconfig"; sourceTree = "<group>"; };
+		69C38B17CD6D0956C01D77A1 /* Pods-Simple Ingredient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Ingredient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Ingredient/Pods-Simple Ingredient.debug.xcconfig"; sourceTree = "<group>"; };
+		6A1935A32F5C0FDDB22755C9 /* Pods_Simple_IngredientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_IngredientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F780ECE1E0713E48C66F293 /* Pods_Simple_Ingredient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Ingredient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72664C071B8334BFCB294E6A /* Pods-Simple IngredientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple IngredientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple IngredientTests/Pods-Simple IngredientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84CAAD4DF9C1998CDC616EB1 /* Pods_Simple_IngredientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_IngredientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2402EA4520B23A24004291B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF96153EBC4A12BF1253239 /* Pods_Simple_Ingredient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2402EA5C20B23A26004291B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551D49716CE4D3535356B3C6 /* Pods_Simple_IngredientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2402EA6720B23A26004291B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE7A9D005750DA8A0F36ED3A /* Pods_Simple_IngredientUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02FBBA4E437630BDBE8916A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F780ECE1E0713E48C66F293 /* Pods_Simple_Ingredient.framework */,
+				6A1935A32F5C0FDDB22755C9 /* Pods_Simple_IngredientTests.framework */,
+				84CAAD4DF9C1998CDC616EB1 /* Pods_Simple_IngredientUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2402EA3F20B23A24004291B4 = {
+			isa = PBXGroup;
+			children = (
+				2402EA4A20B23A24004291B4 /* Simple Ingredient */,
+				2402EA6220B23A26004291B4 /* Simple IngredientTests */,
+				2402EA6D20B23A26004291B4 /* Simple IngredientUITests */,
+				2402EA4920B23A24004291B4 /* Products */,
+				3A890FAB1AD2E5D55A22A480 /* Pods */,
+				02FBBA4E437630BDBE8916A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2402EA4920B23A24004291B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA4820B23A24004291B4 /* Simple Ingredient.app */,
+				2402EA5F20B23A26004291B4 /* Simple IngredientTests.xctest */,
+				2402EA6A20B23A26004291B4 /* Simple IngredientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2402EA4A20B23A24004291B4 /* Simple Ingredient */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA7E20B23A4F004291B4 /* Models */,
+				2402EA7C20B23A3F004291B4 /* Views */,
+				2402EA7D20B23A49004291B4 /* Controllers */,
+				2402EA7F20B23A76004291B4 /* Service */,
+				2402EA4B20B23A24004291B4 /* AppDelegate.swift */,
+				2402EA5720B23A26004291B4 /* LaunchScreen.storyboard */,
+				2402EA5A20B23A26004291B4 /* Info.plist */,
+				2402EA5220B23A24004291B4 /* Simple_Ingredient.xcdatamodeld */,
+				2402EA8020B34035004291B4 /* Assets.xcassets */,
+			);
+			path = "Simple Ingredient";
+			sourceTree = "<group>";
+		};
+		2402EA6220B23A26004291B4 /* Simple IngredientTests */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA6320B23A26004291B4 /* Simple_IngredientTests.swift */,
+				2402EA6520B23A26004291B4 /* Info.plist */,
+			);
+			path = "Simple IngredientTests";
+			sourceTree = "<group>";
+		};
+		2402EA6D20B23A26004291B4 /* Simple IngredientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA6E20B23A26004291B4 /* Simple_IngredientUITests.swift */,
+				2402EA7020B23A26004291B4 /* Info.plist */,
+			);
+			path = "Simple IngredientUITests";
+			sourceTree = "<group>";
+		};
+		2402EA7C20B23A3F004291B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA4F20B23A24004291B4 /* Main.storyboard */,
+				2402EA8C20B9C53F004291B4 /* ExploreCollectionViewCell.swift */,
+				2402EA8E20B9C97B004291B4 /* ExplorePageOne.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2402EA7D20B23A49004291B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA4D20B23A24004291B4 /* MainViewController.swift */,
+				2402EA8220B3C37E004291B4 /* ExploreViewController.swift */,
+				2402EA9420B9CC25004291B4 /* ExplorePageOneViewController.swift */,
+				2402EA9020B9C997004291B4 /* ExplorePageTwoViewController.swift */,
+				2402EA8420B3C38D004291B4 /* FavoriteViewController.swift */,
+				2402EA8620B3C3A5004291B4 /* DailyChallengeViewController.swift */,
+				2402EA8820B3C416004291B4 /* RecipeSearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2402EA7E20B23A4F004291B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA8A20B3C48A004291B4 /* FoodSearch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2402EA7F20B23A76004291B4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3A890FAB1AD2E5D55A22A480 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69C38B17CD6D0956C01D77A1 /* Pods-Simple Ingredient.debug.xcconfig */,
+				121F340B241F1B0B074588C3 /* Pods-Simple Ingredient.release.xcconfig */,
+				72664C071B8334BFCB294E6A /* Pods-Simple IngredientTests.debug.xcconfig */,
+				4A320628F06BBF415500E34A /* Pods-Simple IngredientTests.release.xcconfig */,
+				06E1D5F61C789071578E3146 /* Pods-Simple IngredientUITests.debug.xcconfig */,
+				02B0FA2E5CB18DA37858CE69 /* Pods-Simple IngredientUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2402EA4720B23A24004291B4 /* Simple Ingredient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2402EA7320B23A26004291B4 /* Build configuration list for PBXNativeTarget "Simple Ingredient" */;
+			buildPhases = (
+				623BB51D7D57E39CA9D57391 /* [CP] Check Pods Manifest.lock */,
+				2402EA4420B23A24004291B4 /* Sources */,
+				2402EA4520B23A24004291B4 /* Frameworks */,
+				2402EA4620B23A24004291B4 /* Resources */,
+				3667CD213951C5D56163A4D1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simple Ingredient";
+			productName = "Simple Ingredient";
+			productReference = 2402EA4820B23A24004291B4 /* Simple Ingredient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2402EA5E20B23A26004291B4 /* Simple IngredientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2402EA7620B23A26004291B4 /* Build configuration list for PBXNativeTarget "Simple IngredientTests" */;
+			buildPhases = (
+				A4B98C90B66E97E36316FA72 /* [CP] Check Pods Manifest.lock */,
+				2402EA5B20B23A26004291B4 /* Sources */,
+				2402EA5C20B23A26004291B4 /* Frameworks */,
+				2402EA5D20B23A26004291B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2402EA6120B23A26004291B4 /* PBXTargetDependency */,
+			);
+			name = "Simple IngredientTests";
+			productName = "Simple IngredientTests";
+			productReference = 2402EA5F20B23A26004291B4 /* Simple IngredientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2402EA6920B23A26004291B4 /* Simple IngredientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2402EA7920B23A26004291B4 /* Build configuration list for PBXNativeTarget "Simple IngredientUITests" */;
+			buildPhases = (
+				B6F97E626BC6DE5EB8D3D441 /* [CP] Check Pods Manifest.lock */,
+				2402EA6620B23A26004291B4 /* Sources */,
+				2402EA6720B23A26004291B4 /* Frameworks */,
+				2402EA6820B23A26004291B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2402EA6C20B23A26004291B4 /* PBXTargetDependency */,
+			);
+			name = "Simple IngredientUITests";
+			productName = "Simple IngredientUITests";
+			productReference = 2402EA6A20B23A26004291B4 /* Simple IngredientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2402EA4020B23A24004291B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Pan Lin";
+				TargetAttributes = {
+					2402EA4720B23A24004291B4 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					2402EA5E20B23A26004291B4 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 2402EA4720B23A24004291B4;
+					};
+					2402EA6920B23A26004291B4 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = 2402EA4720B23A24004291B4;
+					};
+				};
+			};
+			buildConfigurationList = 2402EA4320B23A24004291B4 /* Build configuration list for PBXProject "Simple Ingredient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2402EA3F20B23A24004291B4;
+			productRefGroup = 2402EA4920B23A24004291B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2402EA4720B23A24004291B4 /* Simple Ingredient */,
+				2402EA5E20B23A26004291B4 /* Simple IngredientTests */,
+				2402EA6920B23A26004291B4 /* Simple IngredientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2402EA4620B23A24004291B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2402EA5920B23A26004291B4 /* LaunchScreen.storyboard in Resources */,
+				2402EA8120B34035004291B4 /* Assets.xcassets in Resources */,
+				2402EA5120B23A24004291B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2402EA5D20B23A26004291B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2402EA6820B23A26004291B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3667CD213951C5D56163A4D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Simple Ingredient/Pods-Simple Ingredient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Simple Ingredient/Pods-Simple Ingredient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623BB51D7D57E39CA9D57391 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simple Ingredient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4B98C90B66E97E36316FA72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simple IngredientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6F97E626BC6DE5EB8D3D441 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Simple IngredientUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2402EA4420B23A24004291B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2402EA8720B3C3A5004291B4 /* DailyChallengeViewController.swift in Sources */,
+				2402EA8B20B3C48A004291B4 /* FoodSearch.swift in Sources */,
+				2402EA8320B3C37E004291B4 /* ExploreViewController.swift in Sources */,
+				2402EA8920B3C416004291B4 /* RecipeSearchViewController.swift in Sources */,
+				2402EA8D20B9C53F004291B4 /* ExploreCollectionViewCell.swift in Sources */,
+				2402EA4E20B23A24004291B4 /* MainViewController.swift in Sources */,
+				2402EA9520B9CC25004291B4 /* ExplorePageOneViewController.swift in Sources */,
+				2402EA8F20B9C97B004291B4 /* ExplorePageOne.swift in Sources */,
+				2402EA9120B9C997004291B4 /* ExplorePageTwoViewController.swift in Sources */,
+				2402EA4C20B23A24004291B4 /* AppDelegate.swift in Sources */,
+				2402EA5420B23A24004291B4 /* Simple_Ingredient.xcdatamodeld in Sources */,
+				2402EA8520B3C38D004291B4 /* FavoriteViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2402EA5B20B23A26004291B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2402EA6420B23A26004291B4 /* Simple_IngredientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2402EA6620B23A26004291B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2402EA6F20B23A26004291B4 /* Simple_IngredientUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2402EA6120B23A26004291B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2402EA4720B23A24004291B4 /* Simple Ingredient */;
+			targetProxy = 2402EA6020B23A26004291B4 /* PBXContainerItemProxy */;
+		};
+		2402EA6C20B23A26004291B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2402EA4720B23A24004291B4 /* Simple Ingredient */;
+			targetProxy = 2402EA6B20B23A26004291B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2402EA4F20B23A24004291B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2402EA5020B23A24004291B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2402EA5720B23A26004291B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2402EA5820B23A26004291B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2402EA7120B23A26004291B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2402EA7220B23A26004291B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2402EA7420B23A26004291B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C38B17CD6D0956C01D77A1 /* Pods-Simple Ingredient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RV6PXHZN8;
+				INFOPLIST_FILE = "Simple Ingredient/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "PandaPanTech.Simple-Ingredient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2402EA7520B23A26004291B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 121F340B241F1B0B074588C3 /* Pods-Simple Ingredient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6RV6PXHZN8;
+				INFOPLIST_FILE = "Simple Ingredient/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "PandaPanTech.Simple-Ingredient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2402EA7720B23A26004291B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72664C071B8334BFCB294E6A /* Pods-Simple IngredientTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simple IngredientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "PandaPanTech.Simple-IngredientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Ingredient.app/Simple Ingredient";
+			};
+			name = Debug;
+		};
+		2402EA7820B23A26004291B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A320628F06BBF415500E34A /* Pods-Simple IngredientTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simple IngredientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "PandaPanTech.Simple-IngredientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simple Ingredient.app/Simple Ingredient";
+			};
+			name = Release;
+		};
+		2402EA7A20B23A26004291B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06E1D5F61C789071578E3146 /* Pods-Simple IngredientUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simple IngredientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "PandaPanTech.Simple-IngredientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Simple Ingredient";
+			};
+			name = Debug;
+		};
+		2402EA7B20B23A26004291B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02B0FA2E5CB18DA37858CE69 /* Pods-Simple IngredientUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Simple IngredientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "PandaPanTech.Simple-IngredientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Simple Ingredient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2402EA4320B23A24004291B4 /* Build configuration list for PBXProject "Simple Ingredient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2402EA7120B23A26004291B4 /* Debug */,
+				2402EA7220B23A26004291B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2402EA7320B23A26004291B4 /* Build configuration list for PBXNativeTarget "Simple Ingredient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2402EA7420B23A26004291B4 /* Debug */,
+				2402EA7520B23A26004291B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2402EA7620B23A26004291B4 /* Build configuration list for PBXNativeTarget "Simple IngredientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2402EA7720B23A26004291B4 /* Debug */,
+				2402EA7820B23A26004291B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2402EA7920B23A26004291B4 /* Build configuration list for PBXNativeTarget "Simple IngredientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2402EA7A20B23A26004291B4 /* Debug */,
+				2402EA7B20B23A26004291B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2402EA5220B23A24004291B4 /* Simple_Ingredient.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2402EA5320B23A24004291B4 /* Simple_Ingredient.xcdatamodel */,
+			);
+			currentVersion = 2402EA5320B23A24004291B4 /* Simple_Ingredient.xcdatamodel */;
+			path = Simple_Ingredient.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2402EA4020B23A24004291B4 /* Project object */;
+}
