@@ -20,15 +20,21 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        
-        ingredientTextField.delegate = self
+        setupUI()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    //Seperate this into its own function for cleaner code
+    func setupUI(){
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        ingredientTextField.delegate = self
+        //Whenever you add a target, it should be done when the view loads.
+        searchButton.addTarget(self, action: #selector(MainViewController.searchButton(_:)), for: .touchUpInside)
     }
     
     @objc func searchButton(_ sender: Any){
@@ -63,7 +69,9 @@ class MainViewController: UIViewController, UITextFieldDelegate {
                 print(error)
             }
         }
-        searchButton.addTarget(self, action: #selector(MainViewController.searchButton(_:)), for: .touchUpInside)
+        
+        //Why is this here?
+//        searchButton.addTarget(self, action: #selector(MainViewController.searchButton(_:)), for: .touchUpInside)
 
     }
     
