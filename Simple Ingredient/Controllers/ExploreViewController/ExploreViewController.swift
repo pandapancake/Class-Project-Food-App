@@ -21,14 +21,15 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         exploreCollectionView.dataSource = self
         exploreCollectionView.delegate = self
+        exploreIngredient()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func exploreIngredient(category: String) {
-        let url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=category"
+    func exploreIngredient() {
+        let url = "https://www.themealdb.com/api/json/v1/1/categories.php"
         
         Alamofire.request(url).validate().responseJSON { response in
             switch response.result {
@@ -37,8 +38,10 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
                 
                 if let json = response.result.value {
                     print("JSON: C\(json)") // serialized json response
+                    let foodType = json["categories"] as Array<Dictionary<String, String>>
                     self.categories = Categories(JSON: json as! [String:Any])
-                    print(self.categories)
+                    self.categoriesItems.append(self.categories)
+                    self.exploreCollectionView.reloadData()
                 }
             case .failure(let error):
                 print(error)
@@ -48,6 +51,7 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print(categoriesItems.count)
         return categoriesItems.count
     }
     

@@ -18,12 +18,14 @@
 		2402EA8320B3C37E004291B4 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8220B3C37E004291B4 /* ExploreViewController.swift */; };
 		2402EA8520B3C38D004291B4 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8420B3C38D004291B4 /* FavoriteViewController.swift */; };
 		2402EA8720B3C3A5004291B4 /* DailyChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8620B3C3A5004291B4 /* DailyChallengeViewController.swift */; };
-		2402EA8920B3C416004291B4 /* RecipeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8820B3C416004291B4 /* RecipeSearchViewController.swift */; };
 		2402EA8B20B3C48A004291B4 /* FoodSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8A20B3C48A004291B4 /* FoodSearch.swift */; };
 		2402EA8D20B9C53F004291B4 /* ExploreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8C20B9C53F004291B4 /* ExploreCollectionViewCell.swift */; };
 		2402EA8F20B9C97B004291B4 /* ExplorePageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA8E20B9C97B004291B4 /* ExplorePageOne.swift */; };
 		2402EA9120B9C997004291B4 /* ExplorePageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA9020B9C997004291B4 /* ExplorePageTwoViewController.swift */; };
 		2402EA9520B9CC25004291B4 /* ExplorePageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA9420B9CC25004291B4 /* ExplorePageOneViewController.swift */; };
+		2402EA9720BF2BED004291B4 /* MainPageOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA9620BF2BED004291B4 /* MainPageOneViewController.swift */; };
+		2402EA9920BF2C22004291B4 /* MainPageTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA9820BF2C22004291B4 /* MainPageTwoViewController.swift */; };
+		2402EA9D20BF2C9C004291B4 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2402EA9C20BF2C9C004291B4 /* MainCollectionViewCell.swift */; };
 		4BF96153EBC4A12BF1253239 /* Pods_Simple_Ingredient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F780ECE1E0713E48C66F293 /* Pods_Simple_Ingredient.framework */; };
 		551D49716CE4D3535356B3C6 /* Pods_Simple_IngredientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A1935A32F5C0FDDB22755C9 /* Pods_Simple_IngredientTests.framework */; };
 		FE7A9D005750DA8A0F36ED3A /* Pods_Simple_IngredientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CAAD4DF9C1998CDC616EB1 /* Pods_Simple_IngredientUITests.framework */; };
@@ -67,12 +69,14 @@
 		2402EA8220B3C37E004291B4 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		2402EA8420B3C38D004291B4 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		2402EA8620B3C3A5004291B4 /* DailyChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeViewController.swift; sourceTree = "<group>"; };
-		2402EA8820B3C416004291B4 /* RecipeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchViewController.swift; sourceTree = "<group>"; };
 		2402EA8A20B3C48A004291B4 /* FoodSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearch.swift; sourceTree = "<group>"; };
 		2402EA8C20B9C53F004291B4 /* ExploreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCollectionViewCell.swift; sourceTree = "<group>"; };
 		2402EA8E20B9C97B004291B4 /* ExplorePageOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageOne.swift; sourceTree = "<group>"; };
 		2402EA9020B9C997004291B4 /* ExplorePageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageTwoViewController.swift; sourceTree = "<group>"; };
 		2402EA9420B9CC25004291B4 /* ExplorePageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePageOneViewController.swift; sourceTree = "<group>"; };
+		2402EA9620BF2BED004291B4 /* MainPageOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageOneViewController.swift; sourceTree = "<group>"; };
+		2402EA9820BF2C22004291B4 /* MainPageTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTwoViewController.swift; sourceTree = "<group>"; };
+		2402EA9C20BF2C9C004291B4 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		4A320628F06BBF415500E34A /* Pods-Simple IngredientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple IngredientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Simple IngredientTests/Pods-Simple IngredientTests.release.xcconfig"; sourceTree = "<group>"; };
 		69C38B17CD6D0956C01D77A1 /* Pods-Simple Ingredient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple Ingredient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Simple Ingredient/Pods-Simple Ingredient.debug.xcconfig"; sourceTree = "<group>"; };
 		6A1935A32F5C0FDDB22755C9 /* Pods_Simple_IngredientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_IngredientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				2402EA4F20B23A24004291B4 /* Main.storyboard */,
+				2402EA9C20BF2C9C004291B4 /* MainCollectionViewCell.swift */,
 				2402EA8C20B9C53F004291B4 /* ExploreCollectionViewCell.swift */,
 				2402EA8E20B9C97B004291B4 /* ExplorePageOne.swift */,
 			);
@@ -188,13 +193,10 @@
 		2402EA7D20B23A49004291B4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2402EA4D20B23A24004291B4 /* MainViewController.swift */,
-				2402EA8220B3C37E004291B4 /* ExploreViewController.swift */,
-				2402EA9420B9CC25004291B4 /* ExplorePageOneViewController.swift */,
-				2402EA9020B9C997004291B4 /* ExplorePageTwoViewController.swift */,
+				2402EA9A20BF2C51004291B4 /* MainViewController */,
+				2402EA9B20BF2C65004291B4 /* ExploreViewController */,
 				2402EA8420B3C38D004291B4 /* FavoriteViewController.swift */,
 				2402EA8620B3C3A5004291B4 /* DailyChallengeViewController.swift */,
-				2402EA8820B3C416004291B4 /* RecipeSearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -212,6 +214,26 @@
 			children = (
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		2402EA9A20BF2C51004291B4 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA4D20B23A24004291B4 /* MainViewController.swift */,
+				2402EA9620BF2BED004291B4 /* MainPageOneViewController.swift */,
+				2402EA9820BF2C22004291B4 /* MainPageTwoViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		2402EA9B20BF2C65004291B4 /* ExploreViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA8220B3C37E004291B4 /* ExploreViewController.swift */,
+				2402EA9420B9CC25004291B4 /* ExplorePageOneViewController.swift */,
+				2402EA9020B9C997004291B4 /* ExplorePageTwoViewController.swift */,
+			);
+			path = ExploreViewController;
 			sourceTree = "<group>";
 		};
 		3A890FAB1AD2E5D55A22A480 /* Pods */ = {
@@ -442,13 +464,15 @@
 				2402EA8720B3C3A5004291B4 /* DailyChallengeViewController.swift in Sources */,
 				2402EA8B20B3C48A004291B4 /* FoodSearch.swift in Sources */,
 				2402EA8320B3C37E004291B4 /* ExploreViewController.swift in Sources */,
-				2402EA8920B3C416004291B4 /* RecipeSearchViewController.swift in Sources */,
 				2402EA8D20B9C53F004291B4 /* ExploreCollectionViewCell.swift in Sources */,
 				2402EA4E20B23A24004291B4 /* MainViewController.swift in Sources */,
 				2402EA9520B9CC25004291B4 /* ExplorePageOneViewController.swift in Sources */,
 				2402EA8F20B9C97B004291B4 /* ExplorePageOne.swift in Sources */,
+				2402EA9D20BF2C9C004291B4 /* MainCollectionViewCell.swift in Sources */,
+				2402EA9720BF2BED004291B4 /* MainPageOneViewController.swift in Sources */,
 				2402EA9120B9C997004291B4 /* ExplorePageTwoViewController.swift in Sources */,
 				2402EA4C20B23A24004291B4 /* AppDelegate.swift in Sources */,
+				2402EA9920BF2C22004291B4 /* MainPageTwoViewController.swift in Sources */,
 				2402EA5420B23A24004291B4 /* Simple_Ingredient.xcdatamodeld in Sources */,
 				2402EA8520B3C38D004291B4 /* FavoriteViewController.swift in Sources */,
 			);
