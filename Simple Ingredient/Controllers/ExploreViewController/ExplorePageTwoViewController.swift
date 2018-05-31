@@ -14,9 +14,11 @@ class ExplorePageTwoViewController: UIViewController {
 
     @IBOutlet weak var pageTwoImage: UIImageView!
     @IBOutlet weak var pageTwoLabel: UILabel!
-    
-    
+    var ingredient: Ingredient!
+    var foodID: String?
+
     override func viewDidLoad() {
+        detailTypeFood()
         super.viewDidLoad()
 
     }
@@ -25,4 +27,38 @@ class ExplorePageTwoViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
 
+    func detailTypeFood() {
+        let url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(foodID)"
+        
+        Alamofire.request(url).validate().responseJSON { response in
+            switch response.result {
+            case .success:
+                print("Get foodID Successful")
+                
+                if let json = response.result.value {
+                    print("JSON: \(json)") // serialized json response
+                    let ingredient = Ingredient(JSON: json as! [String:Any])
+                    self.getPhoto(type: ingredient!)
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
+    func getPhoto (type: Ingredient) {
+        Alamofire.request(type.imageURL!).responseImage { response in
+            //            debugPrint(response)
+            //            print(response.request)
+            //            print(response.response)
+            //            debugPrint(response.result)
+            if let image = response.result.value {
+                print("image downloaded: \(image)")
+                
+                type.image = image
+            }
+        }
+    }
+    
+    
 }

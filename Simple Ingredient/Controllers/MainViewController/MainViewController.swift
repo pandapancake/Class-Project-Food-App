@@ -19,19 +19,19 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        ingredientTextField.delegate = self
+        transparentNavBar()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    //Seperate this into its own function for cleaner code
-    func setupUI(){
+    func transparentNavBar(){
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
-        ingredientTextField.delegate = self
+        
         //Whenever you add a target, it should be done when the view loads.
         searchButton.addTarget(self, action: #selector(MainViewController.searchButton(_:)), for: .touchUpInside)
     }
@@ -61,6 +61,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
                 if let json = response.result.value {
                     print("JSON: \(json)") // serialized json response
                     self.ingredient = Ingredient(JSON: json as! [String:Any])
+                    print(self.ingredient.name)
+                    
                 }
             case .failure(let error):
                 print(error)
@@ -77,12 +79,12 @@ class MainViewController: UIViewController, UITextFieldDelegate {
 //        self.present(alert, animated: true, completion: nil)
 //    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "ingredientSegue"){
-            let vc = segue.destination as? MainPageOneViewController
-            vc?.ingredientRecipe = self.ingredient
-            
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if (segue.identifier == "ingredientSegue"){
+//            let vc = segue.destination as? MainPageOneViewController
+//            vc?.ingredientItem = itemName
+//            
+//        }
+//    }
 }
 

@@ -183,9 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				2402EA4F20B23A24004291B4 /* Main.storyboard */,
-				2402EA9C20BF2C9C004291B4 /* MainCollectionViewCell.swift */,
-				2402EA8C20B9C53F004291B4 /* ExploreCollectionViewCell.swift */,
-				2402EA8E20B9C97B004291B4 /* ExplorePageOne.swift */,
+				241660C020C08B8100BC6363 /* MainViewCell */,
+				241660C120C08B9300BC6363 /* ExploreViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +233,23 @@
 				2402EA9020B9C997004291B4 /* ExplorePageTwoViewController.swift */,
 			);
 			path = ExploreViewController;
+			sourceTree = "<group>";
+		};
+		241660C020C08B8100BC6363 /* MainViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA9C20BF2C9C004291B4 /* MainCollectionViewCell.swift */,
+			);
+			path = MainViewCell;
+			sourceTree = "<group>";
+		};
+		241660C120C08B9300BC6363 /* ExploreViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2402EA8C20B9C53F004291B4 /* ExploreCollectionViewCell.swift */,
+				2402EA8E20B9C97B004291B4 /* ExplorePageOne.swift */,
+			);
+			path = ExploreViewCell;
 			sourceTree = "<group>";
 		};
 		3A890FAB1AD2E5D55A22A480 /* Pods */ = {
@@ -388,11 +404,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Simple Ingredient/Pods-Simple Ingredient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

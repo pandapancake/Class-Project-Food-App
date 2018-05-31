@@ -8,6 +8,7 @@ target 'Simple Ingredient' do
   # Pods for Simple Ingredient
   pod 'ObjectMapper', '~> 3.1'
   pod 'Alamofire', '~> 4.7'
+  pod 'AlamofireImage', '~> 3.3'
 
   target 'Simple IngredientTests' do
     inherit! :search_paths
