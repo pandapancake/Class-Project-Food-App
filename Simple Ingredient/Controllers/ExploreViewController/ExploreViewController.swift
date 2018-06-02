@@ -43,12 +43,21 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     
     func exploreIngredient() {
         MealService.sharedInstance.getCategories { (responseString, categoriesItems) in
-            if (responseString == "error"){
-                
-            }
+            if (responseString == "error"){/* popup here alerting user about error*/ }
             else{
                 self.categoriesItems = categoriesItems
-                self.exploreCollectionView.reloadData()
+                for i in 0..<self.categoriesItems.count {
+                    MealService.sharedInstance.getCategoryImage(imageUrl: self.categoriesItems[i].imageURL!, completion: { (responseString, image) in
+                        if (responseString == "error"){}
+                        else {
+                            self.categoriesItems[i].image = image
+                            self.exploreCollectionView.reloadData()
+
+                        }
+                    })
+
+                }
+                
             }
         }
 //        let url = "https://www.themealdb.com/api/json/v1/1/categories.php"

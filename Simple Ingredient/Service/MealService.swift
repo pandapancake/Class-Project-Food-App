@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import ObjectMapper
+import AlamofireImage
 
 //MealService.sharedInstance.getCategories()
 class MealService: NSObject {
@@ -29,10 +30,8 @@ class MealService: NSObject {
                     let foodType = jsonData["categories"] as! Array<Dictionary<String, String>>
                     for item in foodType {
                         let type = Categories(JSON: item as [String:Any])
+                        
                         categoriesItems.append(type!) //how many image
-                        
-                        
-                        //                        self.getPhoto(type: type!) //type: name,imageURL
                     }
                     completion("success", categoriesItems)
                 }
@@ -41,23 +40,25 @@ class MealService: NSObject {
             }
         }
     }
+    
+    func getCategoryImage(imageUrl: String, completion:@escaping(String, Image) -> Void)  {
+        Alamofire.request(imageUrl).responseImage { response in
+                //            debugPrint(response)
+                //            print(response.request)
+                //            print(response.response)
+                //            debugPrint(response.result)
+                if let image = response.result.value {
+                    print("image downloaded: \(image)")
+                    completion("success", image)
+//                    type.image = image
+//                    self.categoriesItems.append(type) //how many image
+//                    self.exploreCollectionView.reloadData()
+                }
+            }
+        }
 
     
-//    func getCategoryImages() -> Void{
-//        Alamofire.request(type.imageURL!).responseImage { response in
-//            //            debugPrint(response)
-//            //            print(response.request)
-//            //            print(response.response)
-//            //            debugPrint(response.result)
-//            if let image = response.result.value {
-//                print("image downloaded: \(image)")
-//                
-//                type.image = image
-//                self.categoriesItems.append(type) //how many image
-//                self.exploreCollectionView.reloadData()
-//            }
-//        }
-//    }
+
     
 }
 
