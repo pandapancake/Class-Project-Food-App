@@ -14,7 +14,7 @@ class ExplorePageTwoViewController: UIViewController {
 
     @IBOutlet weak var pageTwoImage: UIImageView!
     @IBOutlet weak var pageTwoLabel: UILabel!
-    var ingredient: Ingredient!
+    var ingredient: Meal!
     var foodID: String?
 
     override func viewDidLoad() {
@@ -28,7 +28,7 @@ class ExplorePageTwoViewController: UIViewController {
     }
 
     func detailTypeFood() {
-        let url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(foodID)"
+        let url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=\(foodID!)"
         
         Alamofire.request(url).validate().responseJSON { response in
             switch response.result {
@@ -37,8 +37,8 @@ class ExplorePageTwoViewController: UIViewController {
                 
                 if let json = response.result.value {
                     print("JSON: \(json)") // serialized json response
-                    let ingredient = Ingredient(JSON: json as! [String:Any])
-                    self.getPhoto(type: ingredient!)
+                    let meal = Meal(JSON: json as! [String:Any])
+                    self.getPhoto(type: meal!)
                 }
             case .failure(let error):
                 print(error)
@@ -46,7 +46,7 @@ class ExplorePageTwoViewController: UIViewController {
         }
     }
     
-    func getPhoto (type: Ingredient) {
+    func getPhoto (type: Meal) {
         Alamofire.request(type.imageURL!).responseImage { response in
             //            debugPrint(response)
             //            print(response.request)

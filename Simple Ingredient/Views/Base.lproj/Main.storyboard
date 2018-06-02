@@ -55,7 +55,6 @@
                                         <connections>
                                             <outlet property="exploreImage" destination="UyY-Px-SMH" id="HqI-x9-bqX"/>
                                             <outlet property="exploreName" destination="oYY-cL-mDg" id="mqK-Yc-SrY"/>
-                                            <segue destination="qdN-tT-Rj9" kind="show" identifier="foodType" id="k4x-lM-94W"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -72,6 +71,7 @@
                     </view>
                     <connections>
                         <outlet property="exploreCollectionView" destination="Y35-Mn-Wee" id="TKb-sn-ume"/>
+                        <segue destination="qdN-tT-Rj9" kind="show" identifier="foodType" id="SI6-Vv-vdN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bnF-Fl-ALR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,7 +123,6 @@
                                         <connections>
                                             <outlet property="exploreRecipeImage" destination="35e-BF-R0p" id="BzE-4H-Vm5"/>
                                             <outlet property="exploreRecipeLabel" destination="cY5-Tq-Zgf" id="xCV-d5-8gC"/>
-                                            <segue destination="3fc-kA-lfL" kind="show" id="jkf-He-gYv"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -144,6 +143,7 @@
                     </view>
                     <connections>
                         <outlet property="explorePageOneCollectionView" destination="68L-da-p27" id="rMi-hw-amG"/>
+                        <segue destination="3fc-kA-lfL" kind="show" identifier="foodType" id="uBd-cO-uir"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJu-vr-hGa" userLabel="First Responder" sceneMemberID="firstResponder"/>

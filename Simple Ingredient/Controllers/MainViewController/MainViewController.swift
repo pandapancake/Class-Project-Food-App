@@ -14,8 +14,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var ingredientTextField: UITextField!
     @IBOutlet weak var searchButton: UIButton!
-    var ingredient: Ingredient!
-    var ingredientItem: [Ingredient] = []
+    var meal: Meal!
+    var mealItem: [Meal] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,8 +60,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
                 
                 if let json = response.result.value {
                     print("JSON: \(json)") // serialized json response
-                    self.ingredient = Ingredient(JSON: json as! [String:Any])
-                    print(self.ingredient.name)
+                    self.meal = Meal(JSON: json as! [String:Any])
+                    print(self.meal.name)
                     
                 }
             case .failure(let error):

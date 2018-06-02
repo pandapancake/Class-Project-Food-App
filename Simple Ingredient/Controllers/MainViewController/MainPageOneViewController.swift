@@ -9,7 +9,7 @@
 import UIKit
 
 class MainPageOneViewController: UIViewController {
-    var ingredientItem: Ingredient?
+    var ingredientItem: Meal?
     
     override func viewDidLoad() {
         super.viewDidLoad()

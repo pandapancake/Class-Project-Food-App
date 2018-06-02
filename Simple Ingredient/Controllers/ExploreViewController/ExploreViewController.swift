@@ -55,7 +55,10 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
                     let foodType = jsonData["categories"] as! Array<Dictionary<String, String>>
                     for item in foodType {
                         let type = Categories(JSON: item as [String:Any])
-                        self.getPhoto(type: type!) //type: name,imageURL
+                        self.categoriesItems.append(type!) //how many image
+                        self.exploreCollectionView.reloadData()
+
+//                        self.getPhoto(type: type!) //type: name,imageURL
                     }
                 }
             case .failure(let error):
@@ -116,9 +119,9 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "foodType"){
             let vc = segue.destination as? ExplorePageOneViewController
-            vc?.typeFood = typeFood
+            vc?.typeFood = typeFood!
             
-            print(typeFood)
+            print(typeFood!)
         }
     }
 }

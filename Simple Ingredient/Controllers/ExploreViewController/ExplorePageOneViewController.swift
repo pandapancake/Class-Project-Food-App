@@ -15,8 +15,8 @@ import AlamofireImage
 class ExplorePageOneViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
  
     @IBOutlet weak var explorePageOneCollectionView: UICollectionView!
-    var ingredient: Ingredient!
-    var ingredientItem: [Ingredient] = []
+    var meal: Meal!
+    var mealItem: [Meal] = []
     var typeFood: String?
     var foodID: String?
     
@@ -32,7 +32,7 @@ class ExplorePageOneViewController: UIViewController, UICollectionViewDataSource
     }
     
     func searchTypeFood() {
-        let url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=\(typeFood)"
+        let url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=\(typeFood!)"
         
         Alamofire.request(url).validate().responseJSON { response in
             switch response.result {
@@ -41,10 +41,12 @@ class ExplorePageOneViewController: UIViewController, UICollectionViewDataSource
                 
                 if let json = response.result.value {
                     print("JSON: \(json)") // serialized json response
-                    let ingredient = Ingredient(JSON: json as! [String:Any])
-                    self.getPhoto(type: ingredient!)
-                    print(self.ingredientItem)
-                    
+                    let jsonData = json as! [String:Any]
+                    let mealType = jsonData["meals"] as! Array<Dictionary<String, String>>
+                    for item in mealType {
+                        let type = Meal(JSON: item as [String:Any])
+                        self.getPhoto(type: type!)
+                    }
                 }
             case .failure(let error):
                 print(error)
@@ -52,7 +54,7 @@ class ExplorePageOneViewController: UIViewController, UICollectionViewDataSource
         }
     }
     
-    func getPhoto (type: Ingredient) {
+    func getPhoto (type: Meal) {
         Alamofire.request(type.imageURL!).responseImage { response in
             //            debugPrint(response)
             //            print(response.request)
@@ -62,21 +64,21 @@ class ExplorePageOneViewController: UIViewController, UICollectionViewDataSource
                 print("image downloaded: \(image)")
                 
                 type.image = image
-                self.ingredientItem.append(type)
+                self.mealItem.append(type)
                 self.explorePageOneCollectionView.reloadData()
             }
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return ingredientItem.count
+        return mealItem.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "typeFoodCell", for: indexPath) as! ExplorePageOne
         
-        cell.exploreRecipeImage.image = ingredientItem[indexPath.item].image
-        cell.exploreRecipeLabel.text = ingredientItem[indexPath.item].name
+        cell.exploreRecipeImage.image = mealItem[indexPath.item].image
+        cell.exploreRecipeLabel.text = mealItem[indexPath.item].name
         
         cell.layer.borderColor = UIColor.white.cgColor
         cell.layer.borderWidth = 1
@@ -89,7 +91,7 @@ class ExplorePageOneViewController: UIViewController, UICollectionViewDataSource
         cell?.layer.borderColor = UIColor.white.cgColor
         cell?.layer.borderWidth = 6
         
-        foodID = ingredientItem[indexPath.item].id
+        foodID = mealItem[indexPath.item].id
         performSegue(withIdentifier: "typeFoodCell", sender: self)
         
     }
@@ -103,9 +105,9 @@ class ExplorePageOneViewController: UIViewController, UICollectionViewDataSource
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "foodType"){
             let vc = segue.destination as? ExplorePageOneViewController
-            vc?.foodID = foodID
+            vc?.foodID = foodID!
             
-            print(foodID)
+            print(foodID!)
         }
     }
     

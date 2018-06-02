@@ -20,10 +20,10 @@ class Ingredient: Mappable {
     var ingredient: String?
     var measure: String?
     var link: String?
-    
+
     required init?(map: Map) {
     }
-    
+
     // Mappable
     func mapping(map: Map) {
         name            <- map["meals.strMeal"]
@@ -33,7 +33,7 @@ class Ingredient: Mappable {
         instructions    <- map["meals.strInstructions"]
         ingredient      <- map["meals.strIngredient1"]
         measure         <- map["meals.strMeasure6"]
-        link            <- map["meals.strYoutube"]
+        link            <- map["me als.strYoutube"]
     }
 }
 
@@ -41,6 +41,7 @@ class Categories: Mappable {
     var name: String?
     var imageURL: String?
     var image: UIImage?
+    
     required init?(map: Map) {
     }
     
@@ -48,6 +49,23 @@ class Categories: Mappable {
     func mapping(map: Map) {
         name            <- map["strCategory"]   //already did in i for item to get to the second level
         imageURL           <- map["strCategoryThumb"]
+    }
+}
+
+class Meal: Mappable {
+    var name: String?
+    var imageURL: String?
+    var image: UIImage?
+    var id: String?
+    
+    required init?(map: Map) {
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        name            <- map["strMeal"]
+        imageURL        <- map["strMealThumb"]
+        id              <- map["idMeal"]
     }
 }
 
