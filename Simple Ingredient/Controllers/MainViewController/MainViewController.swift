@@ -28,9 +28,10 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     }
     
     func transparentNavBar(){
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
+//        self.navigationController?.navigationBar.alpha = 0
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.isTranslucent = true
         
         //Whenever you add a target, it should be done when the view loads.
         searchButton.addTarget(self, action: #selector(MainViewController.searchButton(_:)), for: .touchUpInside)

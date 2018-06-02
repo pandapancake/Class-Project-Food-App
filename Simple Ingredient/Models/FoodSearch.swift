@@ -53,6 +53,17 @@ class Categories: Mappable {
 }
 
 class Meal: Mappable {
+    
+    /*
+     "publisher": "All Recipes",
+     "f2f_url": "http://food2fork.com/view/11332",
+     "title": "Dessert Crepes",
+     "source_url": "http://allrecipes.com/Recipe/Dessert-Crepes/Detail.aspx",
+     "recipe_id": "11332",
+     "image_url": "http://static.food2fork.com/42741693ad.jpg",
+     "social_rank": 99.9999999998884,
+     "publisher_url": "http://allrecipes.com"
+ */
     var name: String?
     var imageURL: String?
     var image: UIImage?
@@ -68,5 +79,27 @@ class Meal: Mappable {
         id              <- map["idMeal"]
     }
 }
+
+/*
+ Recipe
+ "publisher": "All Recipes",
+ "f2f_url": "http://food2fork.com/view/11332",
+ "ingredients": [
+ "4 eggs, lightly beaten",
+ "1 1/3 cups milk",
+ "2 tablespoons butter, melted",
+ "1 cup all-purpose flour",
+ "2 tablespoons white sugar",
+ "1/2 teaspoon salt"
+ ],
+ "source_url": "http://allrecipes.com/Recipe/Dessert-Crepes/Detail.aspx",
+ "recipe_id": "11332",
+ "image_url": "http://static.food2fork.com/42741693ad.jpg",
+ "social_rank": 99.9999999998884,
+ "publisher_url": "http://allrecipes.com",
+ "title": "Dessert Crepes"
+*/
+
+
 
 
