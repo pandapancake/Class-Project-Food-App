@@ -9,6 +9,7 @@ target 'Simple Ingredient' do
   pod 'ObjectMapper', '~> 3.1'
   pod 'Alamofire', '~> 4.7'
   pod 'AlamofireImage', '~> 3.3'
+  pod 'SDWebImage', '~> 4.0'
 
   target 'Simple IngredientTests' do
     inherit! :search_paths

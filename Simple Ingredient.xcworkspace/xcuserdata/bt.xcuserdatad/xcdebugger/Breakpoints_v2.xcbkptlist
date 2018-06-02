@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Simple Ingredient/Controllers/MainViewController/MainViewController.swift"
-            timestampString = "549648252.045832"
+            timestampString = "549649622.3075629"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
@@ -106,11 +106,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Simple Ingredient/Controllers/ExploreViewController/ExploreViewController.swift"
-            timestampString = "549648252.045907"
+            timestampString = "549649622.307636"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "exploreIngredient()"
             landmarkType = "7">
          </BreakpointContent>
@@ -118,43 +118,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Simple Ingredient/Controllers/ExploreViewController/ExploreViewController.swift"
-            timestampString = "549648252.046241"
+            timestampString = "549649622.307695"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "exploreIngredient()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Simple Ingredient/Controllers/ExploreViewController/ExploreViewController.swift"
-            timestampString = "549648252.046506"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "exploreIngredient()"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "Simple_Ingredient.ExploreViewController.exploreIngredient() -&gt; ()"
                   moduleName = "Simple Ingredient"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bt/Desktop/Class-Project-Food-App/Simple%20Ingredient/Controllers/ExploreViewController/ExploreViewController.swift"
-                  timestampString = "549648187.832167"
+                  timestampString = "549648700.442428"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
@@ -162,14 +146,14 @@
                   offsetFromSymbolStart = "14">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.String, Swift.Array&lt;Simple_Ingredient.Categories&gt;) -&gt; () in Simple_Ingredient.ExploreViewController.exploreIngredient() -&gt; ()"
                   moduleName = "Simple Ingredient"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/bt/Desktop/Class-Project-Food-App/Simple%20Ingredient/Controllers/ExploreViewController/ExploreViewController.swift"
-                  timestampString = "549648187.835109"
+                  timestampString = "549648700.443903"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "46"
@@ -186,11 +170,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Simple Ingredient/Controllers/ExploreViewController/ExploreViewController.swift"
-            timestampString = "549648252.046792"
+            timestampString = "549649622.307749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "exploreIngredient()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Simple Ingredient/Controllers/ExploreViewController/ExploreViewController.swift"
+            timestampString = "549649622.307797"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "exploreIngredient()"
             landmarkType = "7">
          </BreakpointContent>
@@ -201,14 +201,62 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Simple Ingredient/Controllers/ExploreViewController/ExploreViewController.swift"
-            timestampString = "549648252.046952"
+            filePath = "Simple Ingredient/Service/MealService.swift"
+            timestampString = "549649622.307844"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "exploreIngredient()"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getCategories(completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Simple Ingredient/Service/MealService.swift"
+            timestampString = "549649629.4072061"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getCategories(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Simple_Ingredient.MealService.getCategories(completion: (Swift.String, Swift.Array&lt;Simple_Ingredient.Categories&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Simple Ingredient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bt/Desktop/Class-Project-Food-App/Simple%20Ingredient/Service/MealService.swift"
+                  timestampString = "549649629.622908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "81">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in Simple_Ingredient.MealService.getCategories(completion: (Swift.String, Swift.Array&lt;Simple_Ingredient.Categories&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Simple Ingredient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bt/Desktop/Class-Project-Food-App/Simple%20Ingredient/Service/MealService.swift"
+                  timestampString = "549649629.624997"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "30">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -10,6 +10,7 @@ import UIKit
 import ObjectMapper
 import Alamofire
 import AlamofireImage
+import SDWebImage
 
 class ExploreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
 
@@ -46,17 +47,20 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
             if (responseString == "error"){/* popup here alerting user about error*/ }
             else{
                 self.categoriesItems = categoriesItems
-                for i in 0..<self.categoriesItems.count {
-                    MealService.sharedInstance.getCategoryImage(imageUrl: self.categoriesItems[i].imageURL!, completion: { (responseString, image) in
-                        if (responseString == "error"){}
-                        else {
-                            self.categoriesItems[i].image = image
-                            self.exploreCollectionView.reloadData()
+//                for i in 0..<self.categoriesItems.count {
+//                    self.categoriesItems[i].image = image
+//                    self.exploreCollectionView.reloadData()
 
-                        }
-                    })
+//                    MealService.sharedInstance.getCategoryImage(imageUrl: self.categoriesItems[i].imageURL!, completion: { (responseString, image) in
+//                        if (responseString == "error"){}
+//                        else {
+//                            self.categoriesItems[i].image = image
+//                            self.exploreCollectionView.reloadData()
+//                        }
+//                    })
 
-                }
+//                }
+                self.exploreCollectionView.reloadData()
                 
             }
         }
@@ -110,7 +114,8 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath) as! ExploreCollectionViewCell
 
-        cell.exploreImage.image = categoriesItems[indexPath.item].image
+//        cell.exploreImage.image = categoriesItems[indexPath.item].image
+        cell.exploreImage.sd_setImage(with: URL(string: categoriesItems[indexPath.row].imageURL!), placeholderImage: UIImage(named: "1"))
         cell.exploreName.text = categoriesItems[indexPath.item].name
     
         cell.layer.borderColor = UIColor.white.cgColor
